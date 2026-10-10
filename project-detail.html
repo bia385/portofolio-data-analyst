@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project details and dashboard preview.">
+    <title>Project Details | Robiatul Isnaini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-detail-page">
+    <nav class="navbar project-detail-navbar">
+        <a class="logo" href="index.html">Robiatul.</a>
+        <a class="project-back-link" href="index.html#projects">Back to projects</a>
+    </nav>
+
+    <main class="project-detail-main">
+        <p class="project-detail-eyebrow">PROJECT DETAILS</p>
+        <div id="project-detail-content" hidden>
+            <span id="project-category" class="badge"></span>
+            <h1 id="project-title"></h1>
+            <p id="project-description" class="project-detail-intro"></p>
+            <p id="project-technologies" class="project-detail-technologies"></p>
+
+            <section class="project-preview-section">
+                <div class="project-detail-section-heading">
+                    <p class="project-detail-eyebrow">VISUAL OVERVIEW</p>
+                    <h2 id="preview-title"></h2>
+                </div>
+                <a id="preview-link" class="project-preview-link" target="_blank" rel="noopener noreferrer">
+                    <img id="preview-image" class="project-preview-image" alt="">
+                    <span>Open image at full size</span>
+                </a>
+                <p id="preview-caption" class="project-preview-caption"></p>
+            </section>
+
+            <div class="project-detail-grid">
+                <section class="project-detail-panel">
+                    <p class="project-detail-eyebrow">OVERVIEW</p>
+                    <h2>Project highlights</h2>
+                    <ul id="project-highlights"></ul>
+                </section>
+            </div>
+
+            <a class="project-back-link project-bottom-link" href="index.html#projects">← Back to all projects</a>
+        </div>
+
+        <section id="project-not-found" class="project-detail-panel" hidden>
+            <h2>Project not found</h2>
+            <p>This project link is invalid or no longer available.</p>
+            <a class="project-button" href="index.html#projects">Back to projects</a>
+        </section>
+    </main>
+
+    <script src="project-detail.js" defer></script>
+</body>
+</html>
